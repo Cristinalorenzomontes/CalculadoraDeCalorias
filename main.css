@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@700&display=swap");
+
+:root {
+  --border__radius: 0.2rem;
+  --border__radius--half-round: 2rem;
+  
+  --radio__left--value: 14px;
+
+  --color__bg--faded: rgba(0, 0, 0, 0.4);
+  --color__border: white;
+  --color__font: black;
+  --color__font--bright: white;
+  --color__font--contrast: grey;
+  --color__theme: #ad3430;
+  --color__secondary: goldenrod;
+  --color__cta: #359553;
+  --color__cta--hover--bottom-border: #1B522C;
+  --font__family: "Open Sans", sans-serif;
+  --font__family--label: "Open Sans Condensed", sans-serif;
+  --header-height: calc(
+    2 * var(--oma-page__space--small) + var(--size__font--large)
+  );
+  --page__margin: var(--oma-page__space--small);
+  --searchbar__space: 0.25rem;
+  --searchbar__top-offset: calc(
+    var(--header-height) + var(--oma-page__space--extra-small)
+  );
+  --size__font--label: 12px;
+  --size__font--extra-small: 0.95rem;
+  --size__font--small: 1.2rem;
+  --size__font--medium: 1.45rem;
+  --size__font--large: 2rem;
+}
+
+body {
+  margin: 20px;
+}
+
+h3 {
+  font-family: var(--font__family--label);
+  font-size: 20px;
+  padding: 30px 0 12px 0;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font__family--label);
+  font-size: 12px;
+}
+
+.johannes-form {
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 0 24px 24px 24px;
+  max-width: 600px;
+  background-color: white;
+  color: black;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+
+  input,
+  textarea {
+    overflow: visible;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+    border: 0px;
+    padding: 8px;
+    padding-left: 12px;
+    margin: 5px 0 12px 0;
+    background-color: #f8f8f8;
+    font-family: var(--font__family);
+  }
+
+  textarea:hover,
+  input[type="tel"]:hover,
+  input[type="email"]:hover,
+  input[type="text"]:hover {
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.7);
+  }
+  
+  textarea:focus,
+  input[type="tel"]:focus,
+  input[type="email"]:focus,
+  input[type="text"]:focus, {
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.7);
+  }
+
+
+  .describe-issue {
+    width: calc(100% - 20px);
+    height: 70px;
+    resize: vertical;
+  }
+
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
+    position: relative;
+    left: var(--radio__left--value);
+    z-index: 99;
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+  .radio-btn:checked + label,
+  .radio-btn:not(:checked) + label {
+    position: relative;
+    display: inline-block;
+    padding: 7px 20px 7px 40px;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 4px;
+    color: black;
+    margin: 5px 0 12px 0;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+    left: calc(var(--radio__left--value) - (var(--radio__left--value) * 2));
+  }
+
+  .radio-btn:checked + label {
+    background-color: white;
+    border: 1px solid #333;
+    /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .radio-btn:not(:checked) + label {
+    background-color: white;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .radio-btn:not(:checked) + label:hover,
+  .radio-btn:checked + label:hover,
+  [type="radio"]:hover + label {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    -webkit-transition: box-shadow 300ms ease;
+    transition: box-shadow 300ms ease;
+  }
+}
+
+input[type="submit"] {
+    background-color: var(--color__cta);
+    border: none;
+    border-radius: var(--border__radius);
+    color: var(--color__font--bright);
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px;   /* padding: var(--oma-page__space--extra-small); */
+    font-size: 16px;
+    width: 100%;
+    box-shadow: none;
+    border: 4px solid transparent;
+}
+
+input[type="submit"]:hover {
+  padding: 11px 12px 13px 12px;
+  border-bottom: 4px solid var(--color__cta--hover--bottom-border);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
