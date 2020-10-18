@@ -1,0 +1,38 @@
+{
+  "inputFields": [
+    {
+      "id": "gender",
+      "label": "gender",
+      "placeholder": "Género",
+      "type": "singleselect",
+      "options": ["Female", "Male"]
+    },
+    {
+      "id": "age",
+      "label": "Edad",
+      "placeholder": "Tu edad",
+      "type": "number"
+    },
+    {
+      "id": "weight",
+      "label": "Weight",
+      "placeholder": "Tu peso en kg",
+      "type": "number"
+      
+    },
+    {
+      "id": "height",
+      "label": "Height",
+      "placeholder": "Tu altura en cm",
+      "type": "number"
+     
+    },
+    {
+        "id": "phisical-activity",
+        "label": "phisical-activity",
+        "placeholder": "¿Cuánto deporte practicas?",
+        "type": "singleselect",
+        "options": ["Nada, no creo en el deporte", "1-2 días por semana", "3 días por semana", "4-5 días por semana", "A diario"]
+    }
+  ]
+}
