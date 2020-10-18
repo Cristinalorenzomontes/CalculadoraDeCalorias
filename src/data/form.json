@@ -2,37 +2,44 @@
   "inputFields": [
     {
       "id": "gender",
-      "label": "gender",
-      "placeholder": "Género",
+      "label": "Sexo",
+      "placeholder": "Sexo",
       "type": "singleselect",
-      "options": ["Female", "Male"]
+      "options": [{"value":"n","key": "n", "value":""},{"value":"f","key":"f", "text":"Femenino"}, {"value":"m","key":"m", "text":"Masculino"}]
     },
     {
       "id": "age",
       "label": "Edad",
-      "placeholder": "Tu edad",
+      "placeholder": "Tu edad real",
       "type": "number"
     },
     {
       "id": "weight",
-      "label": "Weight",
+      "label": "Peso",
       "placeholder": "Tu peso en kg",
       "type": "number"
       
     },
     {
       "id": "height",
-      "label": "Height",
+      "label": "Altura",
       "placeholder": "Tu altura en cm",
       "type": "number"
      
     },
     {
-        "id": "phisical-activity",
-        "label": "phisical-activity",
+        "id": "phisicalActivity",
+        "label": "Actividad física",
         "placeholder": "¿Cuánto deporte practicas?",
         "type": "singleselect",
-        "options": ["Nada, no creo en el deporte", "1-2 días por semana", "3 días por semana", "4-5 días por semana", "A diario"]
+        "options": [
+            {"key": "n", "value":"0","text":""},
+            {"key":"0", "value":"1.2","text":"Nada, no creo en el deporte"},
+            {"key":"1", "value":"1.4","text":"1-2 días por semana"},
+            {"key":"2", "value":"1.6","text":"3 días por semana"},
+            {"key":"3", "value":"1.8","text":"4-5 días por semana"},
+            {"key":"4", "value":"2","text":"A diario"}
+            ]
     }
   ]
 }

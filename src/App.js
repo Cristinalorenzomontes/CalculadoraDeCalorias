@@ -10,8 +10,30 @@ const App = () => {
   const handleInputChange = (ev, id) => setInputValues({ ...inputValues, [id]: ev.target.value });
 
   const handdleButton = () => {
-const calories = (9.99 * parseInt(inputValues.weight) + 6.25 * parseInt(inputValues.height) + 4.92 * parseInt(inputValues.age) - 50)
-const phisical = calories*parseInt(inputValues.phisical-activity)
+    const {gender,
+      age,
+      weight,
+      height,
+      phisicalActivity } = inputValues;
+    console.log({gender,
+      age,
+      weight,
+      height,
+      phisicalActivity })
+    //if (edad === undefined){
+    //alert(pon la edad anda)
+    //return
+  //},
+    
+    
+    console.log("es",{inputValues}); 
+let resultado = (9.99 * parseInt(weight) + 6.25 * parseInt(height) + 4.92 * parseInt(age) - 50)
+    if (gender === "m") resultado = resultado - 200
+    const multiplier = parseFloat(phisicalActivity)
+    resultado = resultado * multiplier;
+console.log(resultado)
+    
+//const phisical = calories*parseInt(inputValues.phisical-activity)
   
 }
 
@@ -19,6 +41,7 @@ const phisical = calories*parseInt(inputValues.phisical-activity)
     <div className="App">
       <Form inputFields={formData.inputFields} onInputChange={handleInputChange} />
       <button onClick={handdleButton}>Calcular</button>
+      {/* {resultado ? <Resultado props={resultado} />: null} */}
     </div>
   );
 }

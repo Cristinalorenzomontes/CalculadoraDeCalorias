@@ -6,8 +6,8 @@ const Input = ({id, type, placeholder, options, onChange}) => {
       return (
         <select id={id} placeholder={placeholder} onChange={onChange}
         >
-          {options.map((option) => (
-            <option key={option} >{option}</option>
+              {options.map((option) => (
+                  <option key={option.key} value={option.value}>{option.text}</option>
           ))}
         </select>
       );
