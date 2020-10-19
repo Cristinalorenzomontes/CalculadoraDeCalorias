@@ -28,7 +28,7 @@ const App = () => {
     
     console.log("es",{inputValues}); 
 let resultado = (9.99 * parseInt(weight) + 6.25 * parseInt(height) + 4.92 * parseInt(age) - 50)
-    if (gender === "m") resultado = resultado - 200
+    if (gender === "m") resultado = resultado + 200
     const multiplier = parseFloat(phisicalActivity)
     resultado = resultado * multiplier;
 console.log(resultado)
