@@ -3,7 +3,6 @@ import Input from '../Input/Input';
 
 
 const Form = ({inputFields, onInputChange, inputValues}) => {
-  console.log('hola soy ' + inputValues)
 
   return (
     <form>
