@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/CalculadoraDeCalorias/static/css/main.0f82f06d.chunk.css",
+    "main.js": "/CalculadoraDeCalorias/static/js/main.2a2353db.chunk.js",
+    "main.js.map": "/CalculadoraDeCalorias/static/js/main.2a2353db.chunk.js.map",
+    "runtime-main.js": "/CalculadoraDeCalorias/static/js/runtime-main.688633fc.js",
+    "runtime-main.js.map": "/CalculadoraDeCalorias/static/js/runtime-main.688633fc.js.map",
+    "static/js/2.93f795de.chunk.js": "/CalculadoraDeCalorias/static/js/2.93f795de.chunk.js",
+    "static/js/2.93f795de.chunk.js.map": "/CalculadoraDeCalorias/static/js/2.93f795de.chunk.js.map",
+    "index.html": "/CalculadoraDeCalorias/index.html",
+    "precache-manifest.6927aafb4c653bb82163e99ad4b4185d.js": "/CalculadoraDeCalorias/precache-manifest.6927aafb4c653bb82163e99ad4b4185d.js",
+    "service-worker.js": "/CalculadoraDeCalorias/service-worker.js",
+    "static/css/main.0f82f06d.chunk.css.map": "/CalculadoraDeCalorias/static/css/main.0f82f06d.chunk.css.map",
+    "static/js/2.93f795de.chunk.js.LICENSE.txt": "/CalculadoraDeCalorias/static/js/2.93f795de.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/CalculadoraDeCalorias/static/media/background.e725404d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.688633fc.js",
+    "static/js/2.93f795de.chunk.js",
+    "static/css/main.0f82f06d.chunk.css",
+    "static/js/main.2a2353db.chunk.js"
+  ]
+}
