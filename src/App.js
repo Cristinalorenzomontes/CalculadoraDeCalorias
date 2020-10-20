@@ -83,7 +83,7 @@ let resultadoCarbosDefinicion = ((resultadoPerderGrasa - (resultadoProteinasDefi
   return (
   <div className="App">
       <header className="header">
-      <h1 className="h1">Calcular calorías diarias según tus objetivos</h1>
+      <h1 className="h1">Calculadora de calorías diarias según tus objetivos</h1>
       <h2 className="h2">Vamos a conocernos un poquito más</h2>
       </header>
       <main className="main">
