@@ -1,0 +1,12 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: auto;
+  .label{
+      background-color: #083378;
+      color: white;
+      border-radius: 5px;
+      margin: 5px;
+  }
+}

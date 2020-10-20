@@ -1,5 +1,11 @@
 import React, {useState} from 'react';
-import './App.css';
+import './stylesheet/app.scss';
+import './stylesheet/header.scss'
+import './stylesheet/main.scss';
+import './stylesheet/form.scss';
+import './stylesheet/input.scss';
+import './stylesheet/result.scss';
+import "./stylesheet/footer.scss";
 import Form from './components/Form/Form';
 import formData from './data/form.json';
 import Result from './components/Results/Result';
@@ -75,13 +81,22 @@ let resultadoCarbosDefinicion = ((resultadoPerderGrasa - (resultadoProteinasDefi
   }
   
   return (
-    <div className="App">
+  <div className="App">
+      <header className="header">
+      <h1 className="h1">Calcular calorías diarias según tus objetivos</h1>
+      <h2 className="h2">Vamos a conocernos un poquito más</h2>
+      </header>
+      <main className="main">
       <Form inputFields={formData.inputFields} onInputChange={handleInputChange} inputValues={inputValues} />
-      <button onClick={handdleButton}>Calcular</button>
+      <button onClick={handdleButton} className="button">Calcular</button>
       {isFormSubmited && <>
       <Result resultado={resultado} ganarMasa={resultadoGanarMasa} perderGrasa={resultadoPerderGrasa} proteinasVolumen={resultadoProteinasVolumen} proteinasDefinicion={resultadoProteinasDefinicion} grasasVolumen={resultadoGrasasVolumen} grasasDefinicion={resultadoGrasasDefinicion} carbosVolumen={resultadoCarbosVolumen} carbosDefinicion={resultadoCarbosDefinicion}/>
-      <button onClick={handleReset}>Borrar</button>
-      </>}
+      <button onClick={handleReset} className="button">Borrar</button>
+        </>}
+        </main>
+      <footer className="footer">
+        <h4>&copy; 2020 Christina Lorenzo Montes</h4>
+      </footer>
  </div>
   );
 }

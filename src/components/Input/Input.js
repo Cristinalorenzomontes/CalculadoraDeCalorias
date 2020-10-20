@@ -2,8 +2,6 @@ import React from 'react';
 
 
 const Input = ({id, type, placeholder, options, onChange, value}) => {
-  console.log('hola soy ' + value + 'en input')
-
 
  if (type === 'singleselect') {
       return (
@@ -23,6 +21,7 @@ const Input = ({id, type, placeholder, options, onChange, value}) => {
         type={type}
         onChange={onChange}
         value={value}
+        className='input'
       ></input>
     );
 }
