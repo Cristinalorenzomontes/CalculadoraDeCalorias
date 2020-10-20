@@ -12,6 +12,7 @@ Si quiere volver a calcular con los datos de otra persona, no tiene más que pul
 ### CÓMO UTILIZAR NUESTRA APP 🔧
 
 Puedes utilizar nuestra aplicación directamente desde el link:
+https://cristinalorenzomontes.github.io/CalculadoraDeCalorias/
 
 O si lo prefieres lanzar en el modo desarrollo, ejecuta:
 
