@@ -24,4 +24,4 @@ npm start
 
 y se te abrirá en: http://localhost:3000 en tu navegador. De este modo la página de modificará y actualizará si realizas cambios.
 
-### ¡A CALCULAR! 😊
+### ¡A CALCULAR! 🚀 😊
