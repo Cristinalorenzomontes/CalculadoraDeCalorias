@@ -56,7 +56,7 @@ const App = () => {
     setIsFormSubmited(true)
   }
 
-let resultado = ((9.99 * parseInt(inputValues.weight)) + (6.25 * parseInt(inputValues.height)) + (4.92 * parseInt(inputValues.age)) - 50) - 200
+let resultado = (((9.99 * parseInt(inputValues.weight)) + (6.25 * parseInt(inputValues.height)) - (4.92 * parseInt(inputValues.age)) - 50) - 200) 
 if (inputValues.gender === "f") resultado = resultado - 200
 const multiplier = parseFloat(inputValues.phisicalActivity)
 resultado = resultado * multiplier;
