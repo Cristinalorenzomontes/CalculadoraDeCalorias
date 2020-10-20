@@ -1,19 +1,18 @@
-  
 .main {
     width: 100%;
-    max-width: 1200px;
+    min-height: 100%;
     margin: auto;
     font-weight: bold;
-    margin: 10px;
-    .button{
-        width: 100px;
-        font-weight: bold;
-        text-transform: uppercase;
-        background-color:#083378;
-        color: white;
-        border-radius: 5px;
-        padding: 10px;
-        margin: auto;
-        margin-top: 20px;
+    margin: 20px 0;
+    .button {
+      width: 100px;
+      font-weight: bold;
+      text-transform: uppercase;
+      background-color: #083378;
+      color: white;
+      border-radius: 5px;
+      padding: 10px;
+      margin: auto;
+      margin-top: 20px;
     }
   }

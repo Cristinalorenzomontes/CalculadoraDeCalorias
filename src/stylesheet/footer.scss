@@ -1,6 +1,9 @@
-  
 .footer {
-    padding: 1rem;
-    display: flex;
-    flex-direction: row-reverse;
-  }
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #d89e9e;
+  color: white;
+  text-align: center;
+}
